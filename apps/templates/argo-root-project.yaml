@@ -11,7 +11,7 @@ spec:
   project: default
   source:
     path: chart/
-    repoURL: https://github.com/zschweinfurth/argo_chart
+    repoURL: https://github.com/zschwein/helm-argo
     targetRevision: HEAD
   syncPolicy:
     syncOptions:
