@@ -1,0 +1,18 @@
+# Default values for argo_chart2.
+# This is a YAML-formatted file.
+# Declare variables to be passed into your template
+
+argo-cd:
+  crds:
+    keep: false
+  createAggregateRoles: true
+  dex:
+    enabled: false
+  server:
+    extraArgs:
+      - --insecure
+    config:
+      repositories: |
+        - type: helm
+          name: argo-cd
+          url: https://argoproj.github.io/argo-helm
